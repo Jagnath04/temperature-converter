@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            #38bdf8,
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            #8b5cf6,
+            transparent 35%
+        ),
+        #0f172a;
+
+    color: #ffffff;
+}
+
+.app {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 20px;
+}
+
+.converter-card {
+    width: 100%;
+    max-width: 500px;
+
+    padding: 38px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 26px;
+
+    backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.4);
+
+    animation: cardAppear 0.7s ease;
+}
+
+.icon {
+    width: 76px;
+    height: 76px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 38px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+
+    color: #cbd5e1;
+
+    font-size: 14px;
+
+    margin-bottom: 32px;
+}
+
+.form-group {
+    margin-bottom: 21px;
+}
+
+label {
+    display: block;
+
+    margin-bottom: 9px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #e2e8f0;
+}
+
+input,
+select {
+    width: 100%;
+
+    padding: 15px 16px;
+
+    border: 1px solid transparent;
+
+    outline: none;
+
+    border-radius: 13px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    color: #0f172a;
+
+    font-size: 15px;
+
+    transition: 0.25s ease;
+}
+
+input:focus,
+select:focus {
+    border-color: #38bdf8;
+
+    box-shadow:
+        0 0 0 4px rgba(56, 189, 248, 0.18);
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+.buttons {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 10px;
+}
+
+button {
+    flex: 1;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 13px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+.convert-btn {
+    background: #38bdf8;
+
+    color: #082f49;
+}
+
+.convert-btn:hover {
+    background: #7dd3fc;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 25px rgba(56, 189, 248, 0.25);
+}
+
+.reset-btn {
+    background: rgba(255, 255, 255, 0.15);
+
+    color: #ffffff;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.reset-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+
+    transform: translateY(-2px);
+}
+
+.result-box {
+    margin-top: 26px;
+
+    padding: 22px;
+
+    text-align: center;
+
+    border-radius: 17px;
+
+    background: rgba(15, 23, 42, 0.5);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    min-height: 125px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-box span {
+    color: #94a3b8;
+
+    font-size: 13px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.result-box h2 {
+    margin-top: 8px;
+
+    font-size: 30px;
+
+    color: #7dd3fc;
+
+    word-break: break-word;
+}
+
+#formula {
+    margin-top: 6px;
+
+    font-size: 12px;
+
+    color: #94a3b8;
+}
+
+footer {
+    margin-top: 20px;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+@keyframes cardAppear {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(25px)
+            scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+@media (max-width: 520px) {
+
+    .app {
+        padding: 20px 15px;
+    }
+
+    .converter-card {
+        padding: 28px 20px;
+
+        border-radius: 22px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .subtitle {
+        margin-bottom: 26px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-height: 700px) {
+
+    .app {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .converter-card {
+        padding: 25px;
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+
+        font-size: 30px;
+
+        margin-bottom: 14px;
+    }
+}

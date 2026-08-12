@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Tempora - A modern temperature converter">
+    <meta name="author" content="Jagnath Mehta">
+
+    <title>Tempora | Temperature Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <section class="converter-card">
+
+            <div class="icon" aria-hidden="true">🌡️</div>
+
+            <h1>Temperature Converter</h1>
+
+            <p class="subtitle">
+                Convert temperature quickly and accurately
+            </p>
+
+            <div class="form-group">
+                <label for="temperature">
+                    Enter Temperature
+                </label>
+
+                <div class="input-wrapper">
+                    <input
+                        type="number"
+                        id="temperature"
+                        placeholder="e.g. 32"
+                        step="any"
+                        autocomplete="off"
+                    >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="unit">
+                    Conversion
+                </label>
+
+                <select id="unit">
+                    <option value="CtoF">
+                        Celsius → Fahrenheit
+                    </option>
+
+                    <option value="FtoC">
+                        Fahrenheit → Celsius
+                    </option>
+                </select>
+            </div>
+
+            <div class="buttons">
+
+                <button
+                    type="button"
+                    class="convert-btn"
+                    onclick="convertTemp()"
+                >
+                    Convert
+                </button>
+
+                <button
+                    type="button"
+                    class="reset-btn"
+                    onclick="resetConverter()"
+                >
+                    Reset
+                </button>
+
+            </div>
+
+            <div class="result-box">
+
+                <span>Result</span>
+
+                <h2 id="result">--</h2>
+
+                <p id="formula"></p>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Designed &amp; Developed with ❤️</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
