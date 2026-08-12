@@ -49,3 +49,44 @@ temperature-converter/
 ├── style.css
 ├── script.js
 └── README.md
+
+## 💻 How To Use
+
+1. Open the Live Demo.
+2. Enter a temperature value.
+3. Select the required conversion.
+4. Click the **Convert** button.
+5. The converted temperature will be displayed.
+6. Click **Reset** to clear the result.
+
+## 🧪 Example
+
+| Input | Conversion | Output |
+|------:|------------|--------|
+| 0 | Celsius → Fahrenheit | 32.00 °F |
+| 100 | Celsius → Fahrenheit | 212.00 °F |
+| 32 | Fahrenheit → Celsius | 0.00 °C |
+| 98.6 | Fahrenheit → Celsius | 37.00 °C |
+
+## 📱 Responsive Design
+
+The application is designed to work smoothly across:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile devices
+
+## 👨‍💻 Author
+
+**Jagnath Mehta**
+
+Web Development & Designing Intern
+
+## 📄 Internship Project
+
+This project was created for the Oasis Infobyte Web Development and Designing internship program.
+
+## 📜 License
+
+This project is created for educational and internship purposes.
