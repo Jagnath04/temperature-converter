@@ -40,16 +40,6 @@ The project was developed as part of a Web Development and Designing internship 
 
 °C = (°F − 32) × 5/9
 
-## 📂 Project Structure
-
-```text
-temperature-converter/
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-
 ## 💻 How To Use
 
 1. Open the Live Demo.
@@ -90,3 +80,14 @@ This project was created for the Oasis Infobyte Web Development and Designing in
 ## 📜 License
 
 This project is created for educational and internship purposes.
+
+## 📂 Project Structure
+
+```text
+temperature-converter/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+
