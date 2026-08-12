@@ -49,6 +49,3 @@ temperature-converter/
 ├── style.css
 ├── script.js
 └── README.md
-
-
-This project is created for educational and internship purposes.
