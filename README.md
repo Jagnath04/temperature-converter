@@ -50,37 +50,5 @@ temperature-converter/
 ├── script.js
 └── README.md
 
-💻 How To Use
-Open the Live Demo.
-Enter a temperature value.
-Select the required conversion.
-Click the Convert button.
-The converted temperature will be displayed.
-Click Reset to clear the result.
-🧪 Example
-Input	Conversion	Output
-0	Celsius → Fahrenheit	32.00 °F
-100	Celsius → Fahrenheit	212.00 °F
-32	Fahrenheit → Celsius	0.00 °C
-98.6	Fahrenheit → Celsius	37.00 °C
-📱 Responsive Design
-
-The application is designed to work smoothly across:
-
-Desktop
-Laptop
-Tablet
-Mobile devices
-👨‍💻 Author
-
-Jagnath Mehta
-
-Web Development & Designing Intern
-
-📄 Internship Project
-
-This project was created for the Oasis Infobyte Web Development and Designing internship program.
-
-📜 License
 
 This project is created for educational and internship purposes.
